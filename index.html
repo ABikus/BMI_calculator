@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>BMI Calculator </h2>
-    <label for="weight">Rašykite svorį (Kg)</label>
-    <input id='weight' type="number"><br>
-    <label for="weight">Rašykite ūgį (m)</label>
-    <input id="height" type="number"><br>
-    <button onclick='calculateBmi()'> Skaičiuoti</button>
-    <button id="clearBtn" onclick='reload()' style="display: none;">Clear</button>
-    
-    <p id='heading'></p>
-    <p id='bmi-output'></p>
 
- <script src="script.js"></script>
-   
+    <div class="main">
+        <h1>BMI Calculator</h1>
+        <div class="container">
+            <div class="input-row">
+                <label for="weight" class="input-text">Rašykite svorį (Kg):</label>
+                <input id="weight" type="number" class="input-text">
+            </div>
+            
+            <div class="input-row">
+                <label for="height" class="input-text">Rašykite ūgį (m):</label>
+                <input id="height" type="number" class="input-text">
+            </div>
+            
+            <button onclick='calculateBmi()' class="btn">Skaičiuoti</button>
+            <button id="clearBtn" onclick='reload()' class="btn" style="display: none;">Clear</button>
+        </div>
+
+        <div class="answer-row">
+            <p id='heading'></p>
+            <p id='bmi-output'></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

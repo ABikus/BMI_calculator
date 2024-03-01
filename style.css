@@ -1,6 +1,55 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 50px;
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: green;
+    border: 2px black solid;
+    width: 400px;
+   align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 370px;
+    margin: 10px calc(50% - 190px);
+    
+}
+.input-text {
+    width: 160px;
+    height: 30px;
+    border: 2px black solid;
+    background-color: white;
+}
+
+.btn {
+    width: 100px;
+    color: red;
+    border: 2px black solid;
+    border-radius: 30px;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.answer-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px black solid; 
+    width: 400px;
+    font-size: 50px;
+}
