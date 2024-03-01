@@ -1,0 +1,16 @@
+{
+  "name": "scaicio-reider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "dead-server --host=localhost --port=4811",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rimantas (https://github.com/belauzas)",
+  "license": "ISC",
+  "devDependencies": {
+    "dead-server": "^1.0.9"
+  }
+}
