@@ -7,13 +7,13 @@
 </head>
 <body>
     <h2>BMI Calculator </h2>
-    <label for="weight">weight (Kg)</label>
-    <input id='weight' type="numbers"><br>
-    <label for="weight">height (cm)</label>
-    <input id="height" type="numbers"><br>
-    <button onclick='calculateBmi()'> Submit</button>
-    <button onclick='reload()' >Clear</button>
-
+    <label for="weight">Rašykite svorį (Kg)</label>
+    <input id='weight' type="number"><br>
+    <label for="weight">Rašykite ūgį (m)</label>
+    <input id="height" type="number"><br>
+    <button onclick='calculateBmi()'> Skaičiuoti</button>
+    <button id="clearBtn" onclick='reload()' style="display: none;">Clear</button>
+    
     <p id='heading'></p>
     <p id='bmi-output'></p>
 
